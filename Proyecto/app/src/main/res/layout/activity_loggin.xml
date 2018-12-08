@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/des"
+    tools:context=".LogginActivity">
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="119dp"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="95dp"
+        android:background="@color/colorBlanco"
+        android:text="Ingresar"
+        android:enabled="true"
+        android:textColor="@color/colorNegro" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="148dp"
+        android:layout_height="120dp"
+        android:layout_alignStart="@+id/btnIngresar"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-18dp"
+        android:layout_marginTop="96dp"
+        android:src="@drawable/hh" />
+
+    <EditText
+        android:id="@+id/etxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etext1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="198dp"
+        android:background="@color/colorBlanco"
+        android:drawableLeft="@mipmap/ic_launcher_block"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/etext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="249dp"
+        android:background="@color/colorBlanco"
+        android:drawableLeft="@mipmap/ic_launcher_usuario"
+        android:ems="10"
+        android:hint="Usuario"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorNegro" />
+
+</RelativeLayout>

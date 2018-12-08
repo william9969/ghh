@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/im">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Luces LED"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlanco"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="105dp"
+        android:layout_height="89dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/focoapagado" />
+
+    <TextView
+        android:id="@+id/txtLED"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="146dp"
+        android:textColor="@color/colorBlanco" />
+
+    <Button
+        android:id="@+id/btnEncender"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="174dp"
+        android:background="@color/colorPlomo"
+        android:text="Encender"
+        android:textColor="@color/colorBlanco" />
+
+    <Button
+        android:id="@+id/btnApagar"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnEncender"
+        android:layout_marginStart="-25dp"
+        android:layout_marginBottom="-4dp"
+        android:layout_toEndOf="@+id/txtLED"
+        android:background="@color/colorPlomo"
+        android:text="Apagar"
+        android:textColor="@color/colorBlanco" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="109dp"
+        android:layout_height="85dp"
+        android:visibility="invisible"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_alignTop="@+id/imageView3"
+        android:src="@drawable/focoprendido" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="249dp"
+        android:text="Puerta Garage"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlanco"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="68dp"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-5dp"
+        android:layout_marginBottom="213dp"
+        android:layout_toEndOf="@+id/btnEncender"
+        android:src="@drawable/cerrado" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtLED"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="-4dp"
+        android:src="@drawable/abierto"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnAbri"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnEncender"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginBottom="149dp"
+        android:background="@color/colorPlomo"
+        android:text="Abrir Puerta"
+        android:textColor="@color/colorBlanco" />
+
+    <Button
+        android:id="@+id/btnCerrar"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnAbri"
+        android:layout_marginStart="-28dp"
+        android:layout_toEndOf="@+id/txtLED"
+        android:background="@color/colorPlomo"
+        android:text="Cerrar Puerta"
+        android:textColor="@color/colorBlanco" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtLED"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="207dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/colorPlomo"
+        android:drawableLeft="@mipmap/ic_launcher_sal" />
+
+</RelativeLayout>
